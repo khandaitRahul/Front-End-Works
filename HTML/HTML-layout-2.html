@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Layout-2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header style="background-color:#f09999 ; width: 100vw; height: 80px; margin-bottom: 10px; border: 2px solid red;">
+    <h1 style="font-size: 40px; padding:10px 20px 10px 0px; text-align:end">HTML 2<sup>nd</sup> Layout</h1>
+  </header>
+
+  <!--MAIN-CONTENT-AREA-->
+  <div class="main-content-area" style="display: flex; margin-bottom: 10px;">
+    <!--SIDEBAR-->
+    <div class="sideBar">
+      <nav style="background-color: #7eceee; width: 20vw; height: 72vh; border: 2px solid blue; margin-right: 10px;">
+        <h2 style="font-size: 30px; padding: 10px 10px;">NavBar</h2>
+        <ul style="padding: 20px 20px; list-style-type:none; margin: 20px;">
+          <li style="margin: 10px;"><a href="#" target="_blank" style="text-decoration: none;">CLICK 1</a></li>
+          <li style="margin: 10px;"><a href="#" target="_blank" style="text-decoration: none;">CLICK 2</a></li>
+          <li style="margin: 10px;"><a href="#" target="_blank" style="text-decoration: none;">CLICK 3</a></li>
+          <li style="margin: 10px;"><a href="#" target="_blank" style="text-decoration: none;">CLICK 4</a></li>
+          <li style="margin: 10px;"><a href="#" target="_blank" style="text-decoration: none;">CLICK 5</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--CONTENT-AREA-START-->
+    <div class="content-section">
+      <!--TOP-SECTION(content-area)-->
+      <section style="background-color: #696767; width: 80vw; height: 40vh;
+        border: 2px solid #1a1919; margin-bottom: 10px;">
+        <h2 style="padding:10px 10px; font-size :30px;">SECTION-1</h2>
+
+        <!--CONTENT-AREA(right-top)-->
+        <div class="top-content-area" style="display: flex; justify-content: space-evenly;">
+
+          <!--left-section-inside-content-area-->
+          <div class="left-section" style="width:50%; ">
+            <article
+              style="width: 100%;height: 90%; padding:10px 5px; background-color:#4b96f7; border: 2px solid #7eceee; color:white">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste magni ratione quos quibusdam, expedita
+              commodi,
+              cum adipisci vel maiores itaque voluptas quo ab delectus nesciunt laborum sed in dolores deserunt!
+            </article>
+          </div>
+
+          <!--right-section-inside-content-area-->
+          <div class="right-section" style="width: 30%;">
+            <aside class="first-content"
+              style="background-color: #f0cc6b; padding:10px; width: 100%; border: 2px solid #442d02; margin-bottom: 10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quae earum, ullam accusantium tempore
+              cupiditate.
+            </aside>
+            <aside class="second-content"
+              style="background-color: #f0cc6b; padding:10px; width: 100%; border: 2px solid #442d02;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet quo, accusamus perspiciatis est
+              reprehenderit!
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!--BOTTOM-SECTION(content-area)-->
+      <section style="background-color: #696767; width: 80vw; height: 30vh;
+        border: 2px solid #1a1919;">
+        <h2 style="padding:10px 10px; font-size :30px;">SECTION-2</h2>
+
+        <!--CONTENT-AREA(right-top)-->
+        <div class="top-content-area" style="display: flex; justify-content: space-evenly;">
+
+          <!--left-section-inside-content-area-->
+          <div class="left-section" style="width:50%; ">
+            <article
+              style="width: 100%;height: 100%; padding:10px 5px; background-color:#4b96f7; border: 2px solid #7eceee; color:white">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste magni ratione quos quibusdam, expedita
+              commodi,
+              cum adipisci vel maiores itaque voluptas quo ab delectus nesciunt laborum sed in dolores deserunt!
+            </article>
+          </div>
+
+          <!--right-section-inside-content-area-->
+          <div class="right-section" style="width: 30%;">
+            <aside class="first-content"
+              style="background-color: #f0cc6b; padding:10px; width: 100%;height: 100%; border: 2px solid #442d02; margin-bottom: 10px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quae earum, ullam accusantium tempore
+              cupiditate.
+            </aside>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--CONTENT-AREA-END-->
+  </div>
+
+  <!--FOOTER-->
+  <footer style="background-color: #e27386; width:100%; height: 45px; 
+    display: flex; align-items: center; justify-content: center; 
+    border: 2px solid red;">
+    <h2 style="text-align:center; font-size: 30px;">Footer</h2>
+  </footer>
+</body>
+
+</html>
