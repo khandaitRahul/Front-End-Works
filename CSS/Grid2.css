@@ -1,0 +1,82 @@
+:root {
+  --min-radius: 5px;
+  --min-padding: 5px;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar Content-1 Content-2 Content-3"
+    "sidebar footer footer footer";
+  grid-gap: 0.2rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3b3a3a;
+  text-align: center;
+}
+
+nav {
+  background-color: #00ffff;
+  grid-area: nav;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+main {
+  background-color: #ffff00;
+  grid-area: main;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+#sidebar {
+  background-color: #ee82ee;
+  grid-area: sidebar;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+#Content-1 {
+  background-color: #ff6347;
+  grid-area: Content-1;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+#Content-2 {
+  background-color: #ffc0cb;
+  grid-area: Content-2;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+#Content-3 {
+  background-color: #87ceeb;
+  grid-area: Content-3;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+footer {
+  background-color: #f4a460;
+  grid-area: footer;
+  border-radius: var(--min-radius);
+  padding-top: var(--min-padding);
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2.5fr 1.5fr 1.5fr 1.5fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "Content-1"
+      "Content-2"
+      "Content-3"
+      "footer ";
+  }
+} ;
