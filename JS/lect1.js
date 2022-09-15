@@ -44,7 +44,7 @@ console.log(" " - 8);
 //in JS 
 //0 = false
 //1 = true
-console.log(true + true);
-console.log(true + false);
-console.log(false + true);
-console.log(false - true);
+console.log(true + true); // output : 2
+console.log(true + false); // output : 1
+console.log(false + true); // output : 1
+console.log(false - true); // output : -1
