@@ -18,8 +18,8 @@ console.log(`my name is ${myName} and my age is ${myAge * 2}`);
 // DataTypes In JS
 //six DataTypes that are primitives (acc. to ES6 & ES7 (till 2020))
 // undefined: typeof instance === "undefined"
-// var a = ;
-// console.log(typeof (a));
+var a;
+console.log(typeof (a));
 // Boolean: typeof instance === "Boolean"
 var c = true;
 console.log(typeof (c))
@@ -34,7 +34,7 @@ console.log(typeof (b))
 
 // Datatypes Practices
 console.log(10 + "20");
-console.log(9 - "4");
+console.log(9 - "4"); //bug
 console.log("qwer" + "ty");
 console.log("qwer" - "ty");
 console.log(" " + " ");
