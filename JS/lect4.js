@@ -94,3 +94,15 @@ do {
 } while (num <= 10);
 
 //FOR LOOP
+console.log("FOR LOOP")
+for (var number = 0; number <= 5; number++) {
+  debugger;
+  console.log(number);
+}
+
+//Practices WAP to print table for given no.(8,9,12,15) using for loop
+for (var no = 1; no <= 10; no++) {
+  var tableOf = 9;
+  debugger;
+  console.log(`9x${no}=${tableOf * no}`)
+}
