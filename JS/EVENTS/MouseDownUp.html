@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #2a364f;
+      display: grid;
+      place-items: center;
+    }
+
+    button {
+      display: inline-block;
+      background: #f8b627;
+      color: #f4f4f4;
+      font-size: 16px;
+      width: 132px;
+      text-align: center;
+      border-radius: 3px;
+      text-decoration: none;
+      padding: 10px 22px;
+      border: none;
+    }
+
+    p {
+      text-align: center;
+      color: #f3f3f3;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #40e0d0;
+    }
+
+    .maindiv {
+      width: 80px;
+      height: 80px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+    }
+
+    #box {
+      width: 80px;
+      height: 80px;
+      background: #ffd700;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mouse Up and Down Events</h1>
+  <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">CLiCK the text!</p>
+  <div class="main_div">
+    <div id="box"></div>
+  </div>
+
+  <script>
+
+    function mouseDown() {
+      document.getElementById("myP").style.color = "#daa520"
+    }
+
+    function mouseUp() {
+      document.getElementById("myP").style.color = "#ff2626"
+    }
+
+    const mEnter = document.getElementById("box");
+    mEnter.addEventListener("mouseenter", () => {
+      mEnter.style.backgroundColor = "#3B44F6";
+      console.log("mouse enter");
+    })
+
+    mEnter.addEventListener("mouseleave", () => {
+      mEnter.style.backgroundColor = "#F55353";
+      console.log("mouse leave");
+    })
+
+  </script>
+</body>
+
+</html>

@@ -104,7 +104,7 @@
         <span class="su_button_circle"></span>
         <a href="#" class="button_su_inner">
           <span class="button_text_container" id="thirdWay">
-            Event Listners
+            InLine Events
           </span>
         </a>
       </div>
@@ -125,13 +125,22 @@
 
     //2nd way of writing a function
     const callingFunction = () => {
-      alert("By Calling a functions")
+      alert("By Calling a functions");
     }
 
+    //3rd way of writing a function
+    const thirdWay = document.getElementById("thirdWay")
+    thirdWay.onclick = function () {
+      alert("Calling it by an ID");
+    }
 
+    //4th way of writing a function
+    const fourthWay = document.querySelector("#fourthWay")
+    fourthWay.addEventListener("click", () => {
+      alert("Calling it by an EventListner");
+    })
 
   </script>
-
 </body>
 
 </html>
