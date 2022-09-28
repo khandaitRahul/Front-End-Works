@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background: #2a364f;
+      display: grid;
+      place-items: center;
+    }
+
+    h1 {
+      color: #f2f2f2;
+      font-size: 3rem;
+    }
+
+    .content {
+      padding-top: 45px;
+      padding-bottom: 20px;
+    }
+
+    .button_container {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .button_su {
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      border-radius: 3px;
+      margin-bottom: 30px;
+    }
+
+    .su_button_circle {
+      background-color: red;
+      border-radius: 1000px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0px;
+      height: 0px;
+      margin-top: 0%;
+      margin-left: 0px;
+      pointer-events: none;
+    }
+
+    .button_su_inner {
+      display: inline-block;
+      background: #f8b627;
+      color: #f4f4f4;
+      font-size: 16px;
+      width: 132px;
+      text-align: center;
+      border-radius: 3px;
+      text-decoration: none;
+      padding: 22px;
+    }
+
+    .button_text_container {
+      position: relative;
+      color: #0c0c6f;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Difference between Inline Event and Event Listener</h1>
+    <div class="button_container">
+
+      <!--1st Button-->
+      <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner">
+          <span class="button_text_container" id="firstWay">
+            Inline Event
+          </span>
+        </a>
+      </div>
+
+      <!--2nd Button-->
+      <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner">
+          <span class="button_text_container" id="secondWay">
+            Event Listeners
+          </span>
+        </a>
+      </div>
+
+      <!---->
+    </div>
+  </div>
+
+  <script>
+    //firstWay
+    //oneWay
+    const firstWay = document.getElementById("firstWay");
+    firstWay.onclick = function () {
+      alert("by Inline Events")
+    }
+    //otherWay
+    firstWay.onclick = function () {
+      alert("another time by Inline Events")
+    }
+
+    //secondWay
+    //oneway
+    const secondWay = document.querySelector("#secondWay");
+    secondWay.addEventListener("click", () => {
+      alert("by using Add Event Listner")
+    });
+    //otherway
+    const callingFunction = () => {
+      console.log("by using other way of Add Event Listner");
+    }
+    secondWay.addEventListener("click", callingFunction)
+  </script>
+</body>
+
+</html>

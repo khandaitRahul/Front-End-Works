@@ -27,5 +27,8 @@
 // what is inputEvents in JS ?
 //the onChange events occurs when the value of an element has been changed.
 
+//Difference between onClick and addEventListener
+//1. addEventListener doesnot override existing event handlers, whereas onClick overrides existing onClick function event handlers
+//2. onClick will work but addEventListener will not work in older versions
 
 
