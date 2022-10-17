@@ -1,0 +1,26 @@
+{
+  "name": "front-end-works",
+  "version": "1.0.0",
+  "description": "node js tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khandaitRahul/Front-End-Works.git"
+  },
+  "keywords": [
+    "learning",
+    "it",
+    "from",
+    "scratch"
+  ],
+  "author": "rahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khandaitRahul/Front-End-Works/issues"
+  },
+  "homepage": "https://github.com/khandaitRahul/Front-End-Works#readme",
+  "dependencies": {}
+}
